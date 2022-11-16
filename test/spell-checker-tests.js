@@ -31,6 +31,10 @@ describe("SpellCheck tests", function () {
             assert.ok(!isSpelledRight("Pikachu"));
         });
 
+        it("Reports that Texas is spelled right", function () {
+            assert.ok(isSpelledRight("Texas"));
+        });
+
     });
 
     describe("Spell Check add words Tests", function () {
